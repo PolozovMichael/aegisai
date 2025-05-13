@@ -24,7 +24,7 @@ export async function generateSecureCode(prompt: string): Promise<string> {
     const userPrompt = `Please secure the following code:\n\n${prompt}`
 
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: 'gpt-4o-mini',
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },

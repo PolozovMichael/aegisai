@@ -1,10 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ AegisAI – Secure Code Generator
 
-## Getting Started
+AegisAI is an intelligent, developer-focused tool that analyzes insecure code, explains vulnerabilities, and generates secure alternatives in real-time using AI. Built with **Next.js**, **Tailwind CSS**, **LangChain**, and **OpenAI-compatible models**, it provides a seamless experience for writing safer, production-ready code.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
 
 ```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+
+2. Run the development server
+
 npm run dev
 # or
 yarn dev
@@ -12,25 +26,65 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000 in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can begin editing by modifying app/page.tsx. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📂 Project Structure
 
-## Learn More
+    app/ – Contains routes and server actions
 
-To learn more about Next.js, take a look at the following resources:
+    components/ – UI elements (chatbot, navbar, feature cards, etc.)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    lib/ – API clients and utilities
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    public/ – Static files and assets
 
-## Deploy on Vercel
+    styles/ – Global Tailwind styles and themes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔐 Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ✨ Sleek, animated UI with dark/light themes and glassy effects
+
+    🤖 AI-powered secure code transformation
+
+    🛡️ Detects vulnerabilities and replaces insecure code
+
+    💡 Educates developers on best practices
+
+    🧠 Models like GPT-4o-mini and Mistral-7B support
+
+    🌐 Fully responsive, accessible, and deploy-ready
+
+🧠 Tech Stack
+
+    Framework: Next.js
+
+    UI: Tailwind CSS, Framer Motion
+
+    Icons: Tabler Icons
+
+    AI/LLMs: LangChain, OpenAI-compatible APIs
+
+    Hosting: Vercel
+
+📚 Learn More
+
+To learn more about Next.js and its capabilities:
+
+    📘 Next.js Documentation – features and APIs
+
+    🧑‍🏫 Learn Next.js – interactive beginner-friendly tutorial
+
+    🔗 Next.js GitHub Repo – contribute or explore
+
+🚀 Deploy on Vercel
+
+The fastest way to deploy AegisAI is via Vercel, the creators of Next.js.
+
+Refer to the official Next.js deployment documentation for setup and environment variables.
+
+📄 License
+
+MIT © 2025 — Crafted with ❤️ by [Mikhail and Stanislav]

@@ -1,0 +1,27 @@
+name: CI/CD Deploy to Swarm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Deploy to Swarm
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
+        run: |
+          docker build -t aegisai-frontend:latest .
+
+      # This part is for simulation; in real world, you'd push to registry
+      - name: Simulated Deploy (SSH)
+        run: |
+          echo "SSH into Swarm Manager and deploy manually"
